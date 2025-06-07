@@ -2,6 +2,7 @@
 	"name": "reactfolio",
 	"version": "1.1.0",
 	"description": "Personal portfolio template built using Reactjs",
+	"homepage": "https://jaxzy-51.github.io/reactfolio",
 	"author": {
 		"name": "Tharindu N. Madhusanka",
 		"email": "mail@tharindu.dev",
@@ -30,6 +31,8 @@
 	"scripts": {
 		"start": "react-scripts start",
 		"build": "react-scripts build",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"
 	},
@@ -54,5 +57,8 @@
 	"prettier": {
 		"useTabs": true,
 		"tabWidth": 4
+	},
+	"devDependencies": {
+		"gh-pages": "^6.3.0"
 	}
 }
